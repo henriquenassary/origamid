@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascprit</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>   
+<body>
+    <div class="grid-container">
+
+        <nav class="menu" data-menu="suave">
+            <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+            <ul data-menu="list" id="menu">
+                <li><a href="#animais">Animais</a></li>
+                <li data-dropdown>
+                    <a href="#sobre.html">Sobre</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">A empresa</a></li>
+                        <li><a href="#">Equipe</a></li>
+                        <li><a href="#">Investidores</a></li>
+                        <li><a href="#">Sócios</a></li>
+                    </ul>
+                </li>
+                <li><a href="#faq">Faq</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a data-modal="abrir">Login -></a></li>
+            </ul>
+        </nav>
+        <section class="grid-section animais" data-anima="scroll" id="animais">
+            <h1 class="titulo">Animais Fantásticos</h1>
+            <ul class="animais-lista" data-tab="menu">
+                <li>
+                    <img src="img/arena-fundo.jpg" alt="">
+                </li>
+                <li>
+                    <img src="img/branco.jpg" alt="">
+                </li>
+                <li>
+                    <img src="img/eva-azul-bebê-700x600.jpg" alt="">
+                </li>
+                <li>
+                    <img src="img/perfil-henrique.jpg" alt="">
+                </li>
+                <li>
+                    <img src="img/rede.jpg" alt="">
+                </li>
+            </ul>
+            <div class="animais-descricao" data-tab="content">
+                <section data-anima="show-right">
+                    <h2>Raposa</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam adipisci, veniam libero temporibus vel accusamus harum aliquid. Consectetur commodi quos laboriosam cupiditate eveniet officia eaque tempore, saepe, ipsa sed maxime.
+                    Doloribus, odit minima. Consequatur corporis esse sapiente nemo nobis voluptatum provident neque, fugiat officia asperiores nostrum exercitationem cupiditate? Non cumque mollitia quas voluptatem exercitationem magnam, error architecto saepe magni eaque!
+                    Iusto dolor voluptatum expedita et. Inventore dolores eos cupiditate, eligendi labore explicabo quibusdam et consectetur nihil cumque unde quod ut, earum repellendus nisi voluptatibus laborum minima qui. Dolores, velit est?
+                    Voluptatibus fugit quo eum, sequi enim sed commodi, facilis praesentium perspiciatis repudiandae ipsam nemo nostrum atque reprehenderit, deleniti numquam temporibus incidunt nobis tenetur. Necessitatibus, magnam minus ducimus error quo quos.</p>
+                </section>
+
+                <section data-anima="show-down">
+                    <h2>Esquilo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam adipisci, veniam libero temporibus vel accusamus harum aliquid. Consectetur commodi quos laboriosam cupiditate eveniet officia eaque tempore, saepe, ipsa sed maxime.
+                    Doloribus, odit minima. Consequatur corporis esse sapiente nemo nobis voluptatum provident neque, fugiat officia asperiores nostrum exercitationem cupiditate? Non cumque mollitia quas voluptatem exercitationem magnam, error architecto saepe magni eaque!
+                    Iusto dolor voluptatum expedita et. Inventore dolores eos cupiditate, eligendi labore explicabo quibusdam et consectetur nihil cumque unde quod ut, earum repellendus nisi voluptatibus laborum minima qui. Dolores, velit est?
+                    Voluptatibus fugit quo eum, sequi enim sed commodi, facilis praesentium perspiciatis repudiandae ipsam nemo nostrum atque reprehenderit, deleniti numquam temporibus incidunt nobis tenetur. Necessitatibus, magnam minus ducimus error quo quos.</p>
+                </section>
+
+                <section data-anima="show-right">
+                    <h2>Arara</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam adipisci, veniam libero temporibus vel accusamus harum aliquid. Consectetur commodi quos laboriosam cupiditate eveniet officia eaque tempore, saepe, ipsa sed maxime.
+                    Doloribus, odit minima. Consequatur corporis esse sapiente nemo nobis voluptatum provident neque, fugiat officia asperiores nostrum exercitationem cupiditate? Non cumque mollitia quas voluptatem exercitationem magnam, error architecto saepe magni eaque!
+                    Iusto dolor voluptatum expedita et. Inventore dolores eos cupiditate, eligendi labore explicabo quibusdam et consectetur nihil cumque unde quod ut, earum repellendus nisi voluptatibus laborum minima qui. Dolores, velit est?
+                    Voluptatibus fugit quo eum, sequi enim sed commodi, facilis praesentium perspiciatis repudiandae ipsam nemo nostrum atque reprehenderit, deleniti numquam temporibus incidunt nobis tenetur. Necessitatibus, magnam minus ducimus error quo quos.</p>
+                </section>
+
+                <section data-anima="show-down">
+                    <h2>Lobo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam adipisci, veniam libero temporibus vel accusamus harum aliquid. Consectetur commodi quos laboriosam cupiditate eveniet officia eaque tempore, saepe, ipsa sed maxime.
+                    Doloribus, odit minima. Consequatur corporis esse sapiente nemo nobis voluptatum provident neque, fugiat officia asperiores nostrum exercitationem cupiditate? Non cumque mollitia quas voluptatem exercitationem magnam, error architecto saepe magni eaque!
+                    Iusto dolor voluptatum expedita et. Inventore dolores eos cupiditate, eligendi labore explicabo quibusdam et consectetur nihil cumque unde quod ut, earum repellendus nisi voluptatibus laborum minima qui. Dolores, velit est?
+                    Voluptatibus fugit quo eum, sequi enim sed commodi, facilis praesentium perspiciatis repudiandae ipsam nemo nostrum atque reprehenderit, deleniti numquam temporibus incidunt nobis tenetur. Necessitatibus, magnam minus ducimus error quo quos.</p>
+                </section>
+
+                <section data-anima="show-right">
+                    <h2>Tatu</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam adipisci, veniam libero temporibus vel accusamus harum aliquid. Consectetur commodi quos laboriosam cupiditate eveniet officia eaque tempore, saepe, ipsa sed maxime.
+                    Doloribus, odit minima. Consequatur corporis esse sapiente nemo nobis voluptatum provident neque, fugiat officia asperiores nostrum exercitationem cupiditate? Non cumque mollitia quas voluptatem exercitationem magnam, error architecto saepe magni eaque!
+                    Iusto dolor voluptatum expedita et. Inventore dolores eos cupiditate, eligendi labore explicabo quibusdam et consectetur nihil cumque unde quod ut, earum repellendus nisi voluptatibus laborum minima qui. Dolores, velit est?
+                    Voluptatibus fugit quo eum, sequi enim sed commodi, facilis praesentium perspiciatis repudiandae ipsam nemo nostrum atque reprehenderit, deleniti numquam temporibus incidunt nobis tenetur. Necessitatibus, magnam minus ducimus error quo quos.</p>
+                </section>
+            </div>
+        </section>
+
+        <section class="grid-section faq" data-anima="scroll" id="faq">
+            <h1 class="titulo">FAQ</h1>
+            <dl class="faq-lista" data-anima="accordion">
+                <dt>Qual a idade dos animais?</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, error quo facilis voluptas ratione et accusamus doloribus nobis laborum, corporis deleniti culpa labore itaque. Adipisci accusantium dolorum nesciunt facilis esse.</dd>
+                <dt>Qual a idade dos animais?</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, error quo facilis voluptas ratione et accusamus doloribus nobis laborum, corporis deleniti culpa labore itaque. Adipisci accusantium dolorum nesciunt facilis esse.</dd>
+                <dt>Qual a idade dos animais?</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, error quo facilis voluptas ratione et accusamus doloribus nobis laborum, corporis deleniti culpa labore itaque. Adipisci accusantium dolorum nesciunt facilis esse.</dd>
+                <dt>Qual a idade dos animais?</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, error quo facilis voluptas ratione et accusamus doloribus nobis laborum, corporis deleniti culpa labore itaque. Adipisci accusantium dolorum nesciunt facilis esse.</dd>
+
+            </dl>
+        </section>
+
+        <section class="grid-section numeros" data-anima="scroll">
+            <h1 class="titulo">Números</h1>
+            <div class="numeros-grid">
+            </div>
+        </section>
+    
+        <section class="grid-section contato" data-anima="scroll" id="contato">
+            <h1 class="titulo">Contato</h1>
+            <div class="mapa" data-tooltip aria-label="Endereço próximo">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29931.93839011291!2d-48.3339012871006!3d-20.321271434096143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bb0982923eb299%3A0x75a50f28ae08a947!2sGua%C3%ADra%2C%20SP%2C%2014790-000!5e0!3m2!1spt-BR!2sbr!4v1631101195052!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <ul class="dados">
+                <li>contato@docone.com.br</li>
+                <li>+55 (17) 98132-3979</li>
+                <li>Rua 24 numero 139</li>
+                <li>Guaira SP</li>
+                <li data-semana="1,2,3,4,5" data-horario="8,18">Seg à Sex das 8 às 18</li>
+            </ul>
+        </section>
+
+        <footer class="copy">
+            <p>Todos direitos reservados.</p>
+        </footer>
+
+    </div>
+
+    <section class="modal-container" data-modal="container"> 
+        <div class="modal">
+            <button data-modal="fechar" class="fechar">X</button>
+            <form action="">
+                <label for="email">Email</label>
+                <input type="text" for="email" id="email">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="conteudo-txt"></div>
+
+    <script type="module" src="js/scprit.js"></script>
+</body> 
+</html>

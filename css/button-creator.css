@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  background: #ccc;
+  display: grid;
+  grid-template-columns: 210px 600px 1fr 1fr;
+  grid-gap: 30px;
+  padding: 30px;
+}
+pre {
+  margin: 0;
+}
+label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+input {
+  display: block;
+}
+
+#controles {
+  font-family: monospace;
+  font-size: .875rem;
+  background: #eee;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .1);
+}
+
+.btn-resultado {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.css {
+  font-family: monospace;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.css span {
+  margin-bottom: .5rem;
+}
