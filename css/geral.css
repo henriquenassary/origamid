@@ -155,11 +155,7 @@ body.ativo {
 }
 
 .mapa {
-  grid-column: 2;
-}
-
-.mapa iframe {
-  width: 100%;
+  grid-column: 1 / 3;
 }
 
 .dados {

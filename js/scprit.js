@@ -2,10 +2,10 @@ import ScrollSuave from './modules/scroll-suave.js';
 import Accordion from './modules/accordion.js';
 import TabNav from './modules/tabNav.js';
 import Modal from './modules/modal.js'
-import initToltip from './modules/tooltip.js'
+import Tooltip from './modules/tooltip.js'
 import initDropDownMenu from './modules/dropdown-menu.js'
 import initMenuMobile from './modules/menu-mobile.js'
-import initAnimaNumeros from './modules/anima-numeros.js'
+import fetchAnimais from './modules/fetch-animais.js'
 import initFuncionamento from './modules/hora-funcionamento.js'
 import initAnimaSections from './modules/anima-sections.js';
 
@@ -21,11 +21,20 @@ tabNav.init();
 const modal  = new Modal('[data-modal="abrir"]', '[data-modal="fechar"]', '[data-modal="container"]');
 modal.init();
 
-initToltip();
+const tooltip = new Tooltip('[data-tooltip]');
+tooltip.init();
+
 initDropDownMenu();
 initMenuMobile();
-initAnimaNumeros();
 initFuncionamento();
 initAnimaSections();
 
+fetchAnimais('../../animaisapi.json', '.numeros-grid');
 
+const btnGeraNumero = document.querySelector('[data-gera="numero"]');
+const mostraNumeroAleatorio = document.querySelector('.numero-aleatorio');
+btnGeraNumero.addEventListener('click', () => {
+  let min = Math.ceil(1);
+  let max = Math.floor(200);
+  mostraNumeroAleatorio.innerText = Math.floor(Math.random() * (max - min) + min);
+});
