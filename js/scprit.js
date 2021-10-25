@@ -29,7 +29,7 @@ initMenuMobile();
 initFuncionamento();
 initAnimaSections();
 
-fetchAnimais('../../json/animaisapi.json', '.numeros-grid');
+fetchAnimais('origamid/json/animaisapi.json', '.numeros-grid');
 
 const btnGeraNumero = document.querySelector('[data-gera="numero"]');
 const mostraNumeroAleatorio = document.querySelector('.numero-aleatorio');
